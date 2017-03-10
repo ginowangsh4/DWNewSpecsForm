@@ -86,3 +86,11 @@ box-shadow: 0 1px 0 0 #000;
 .material-placeholder{
   text-align: center;
 }
+img.materialboxed.initialized {
+  margin: auto;
+  text-align: center;
+}
+div.evo-pop.ui-widget-content.ui-corner-all {
+  margin: auto;
+  text-align: center;
+}
