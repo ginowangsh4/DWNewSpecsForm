@@ -1,0 +1,88 @@
+/* Remove padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: "general";
+    src: url("/fonts/CircularStd-Medium.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "title";
+    src: url("/fonts/CircularStd-Bold.otf") format("truetype");
+}
+
+html {
+    background-color: #f3f3f3;
+    font-family: "title", sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+h6{
+  font-size: 1.2em;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+.input-field input[type=file]:focus + label {
+  color: #000;
+}
+.input-field textarea[class=materialize-textarea]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=file]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field textarea[class=materialize-textarea]:focus {
+border-bottom: 1px solid #000;
+box-shadow: 0 1px 0 0 #000;
+}
+/* GENERAL STYLING FOR 6 PAGES */
+.section{
+  padding-bottom: 7px;
+}
+.info-icon {
+  margin-top: 8px;
+}
+.card-panel {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.resize {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+}
+.file-upload {
+  padding-top: 10px;
+}
+.material-placeholder{
+  text-align: center;
+}
