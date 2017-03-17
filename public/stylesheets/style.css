@@ -94,3 +94,30 @@ div.evo-pop.ui-widget-content.ui-corner-all {
   margin: auto;
   text-align: center;
 }
+/*********************
+***  Site Colors  ***
+*********************/
+
+.logo-purple {
+    color: rgb(154,84,158);
+}
+
+.logo-orange {
+    color: rgb(245,163,58);
+}
+
+.logo-teal {
+    color: rgb(49,165,153);
+}
+
+.logo-blue {
+    color: rgb(89,161,213);
+}
+
+.logo-red {
+    color: rgb(237,84,85);
+}
+
+.logo-green {
+    color: rgb(81,181,87);
+}

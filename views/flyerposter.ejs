@@ -6,21 +6,15 @@
   <title>Specs :: Flyer/Poster</title>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="/stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css">
   <link href="../stylesheets/evol-colorpicker.css" rel="stylesheet" type="text/css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="../javascripts/evol-colorpicker.js"></script>
-  <script type="text/javascript">
-      $(document).ready(function() {
-          $("#colorpicker1").colorpicker({
-            defaultPalette: 'web'
-          });
-      });
-  </script>
+
 </head>
 
 <body>
@@ -236,7 +230,7 @@
         </div>
         <!-- ###########################################################################-->
         <div class="card-panel amber darken-1 white-text">
-          <h5>5. Do you have any branking elements?</h5>
+          <h5>5. Do you have any branding elements?</h5>
         </div>
 
         <div class="row resize">
@@ -290,7 +284,13 @@
 <!--  Scripts-->
 <script src="/javascripts/materialize.js"></script>
 <script src="/javascripts/init.js"></script>
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#colorpicker1").colorpicker({
+          defaultPalette: 'web'
+        });
+    });
+</script>
 
 </body>
 </html>

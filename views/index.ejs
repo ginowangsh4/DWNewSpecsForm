@@ -18,24 +18,24 @@
       <div class="row center">
         <img src="/images/logo.png" width='100' height='100'>
       </div>
-      <h2 class="header center orange-text">Hey there, welcome to DesignWorks!</h2>
+      <h2 class="header center orange-text">Hey there, welcome to <span class="logo-red">D</span><span class=logo-orange>e</span><span class=logo-teal>s</span><span class=logo-blue>i</span><span class="logo-purple">g</span><span class="logo-red">n</span><span class=logo-orange>W</span><span class=logo-teal>o</span><span class=logo-blue>r</span><span class="logo-purple">k</span><span class="logo-red">s</span>!</h2>
       <div class="divider"></div>
       <br><br>
       <div class="row center">
-        <h5 class="header col s12">First thing first, this should get us started -</h5>
-        <h5 class="center">what type of design are you interested in?</h5>
+        <!-- <h5 class="header col s12">First thing first, this should get us started -</h5> -->
+        <h5 class="center">What type of design are you interested in?</h5>
 
         <div class="col m3"></div>
         <div class="input-field col s12 m6">
           <select id="my-designs" class="icons">
             <option value="" disabled selected>Choose your design</option>
-            <option value="" data-icon="images/peanutbutter.png" class="circle">Flyer/Poster Design</option>
-            <option value="" data-icon="images/peanutbutter.png" class="circle">Website Design</option>
-            <option value="" data-icon="images/peanutbutter.png" class="circle">Social Media Package</option>
-            <option value="" data-icon="images/peanutbutter.png" class="circle">Logo Design</option>
-            <option value="" data-icon="images/peanutbutter.png" class="circle">Brochure Design</option>
-            <option value="" data-icon="images/peanutbutter.png" class="circle">Apparel</option>
-            <option value="" data-icon="images/peanutbutter.png" class="circle">Other Design</option>
+            <option value="" class="circle">Flyer/Poster Design</option>
+            <option value="" class="circle">Website Design</option>
+            <option value="" class="circle">Social Media Package</option>
+            <option value="" class="circle">Logo Design</option>
+            <option value="" class="circle">Brochure Design</option>
+            <option value="" class="circle">Apparel</option>
+            <option value="" class="circle">Other Design</option>
           </select>
         </div>
         <div class="col m3"></div>
@@ -71,7 +71,8 @@
 <br><br><br>
 
 <div class="center">
-  <button onclick="goPlaces()"class="btn orange waves-effect waves-light center" type="submit" name="action">Next Step
+  <button onclick="goPlaces()" class="btn orange waves-effect waves-light center" type="submit" name="action">
+    Next Step
   </button>
 </div>
 
@@ -102,36 +103,30 @@ window.goPlaces = function(){
   var strUser = e.options[e.selectedIndex].text;
   switch(strUser){
     case 'Flyer/Poster Design':
-    window.location.href = "/flyerposter";
-    break;
+      window.location.href = "/flyerposter";
+      break;
     case 'Website Design':
-    window.location.href = "/website";
-    break;
+      window.location.href = "/website";
+      break;
     case 'Social Media Package':
-    window.location.href = "/socialmedia";
-    break;
+      window.location.href = "/socialmedia";
+      break;
     case 'Logo Design':
-    window.location.href = "/logo";
-    break;
+      window.location.href = "/logo";
+      break;
     case 'Brochure Design':
-    window.location.href = "/brochure";
-    break;
+      window.location.href = "/brochure";
+      break;
     case 'Apparel':
-    window.location.href = "/apparel";
-    break;
+      window.location.href = "/apparel";
+      break;
     case 'Other Design':
-    window.location.href = "/other";
-    break;
+      window.location.href = "/other";
+      break;
     default:
-    alert("Please choose a design from the dropdown list.");
+      alert("Please choose a design from the dropdown list.");
   }
 }
 </script>
-
-<style>
-footer {
-  bottom:0;
-}
-</style>
 </body>
 </html>
