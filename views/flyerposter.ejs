@@ -14,6 +14,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="../javascripts/evol-colorpicker.js"></script>
+  <script src="../javascripts/base64.js"></script>
+  <script src="../javascripts/00flyerposter.js"></script>
 
 </head>
 
@@ -38,23 +40,23 @@
           <div class="row">
             <div class="input-field">
               <i class="material-icons prefix orange-text info-icon">account_circle</i>
-              <input id="icon_name" type="text" class="validate">
-              <label for="icon_name" class="black-text">Your Name, Please</label>
+              <input id="nameInput" type="text" class="validate">
+              <label for="nameInput" class="black-text">Your Name, Please</label>
             </div>
             <div class="input-field">
               <i class="material-icons prefix orange-text info-icon">perm_identity</i>
-              <input id="icon_organization" type="text" class="validate">
-              <label for="icon_organization" class="black-text">Organization Name</label>
+              <input id="organizationInput" type="text" class="validate">
+              <label for="organizationInput" class="black-text">Organization Name</label>
             </div>
             <div class="input-field">
               <i class="material-icons prefix orange-text info-icon">phone</i>
-              <input id="icon_phone" type="text" class="validate">
-              <label for="icon_phone" class="black-text">Phone Number</label>
+              <input id="phoneInput" type="text" class="validate">
+              <label for="phoneInput" class="black-text">Phone Number</label>
             </div>
             <div class="input-field">
               <i class="material-icons prefix orange-text info-icon">email</i>
-              <input id="icon_email" type="text" class="validate">
-              <label for="icon_email" class="black-text">Email Address</label>
+              <input id="emailInput" type="text" class="validate">
+              <label for="emailInput" class="black-text">Email Address</label>
             </div>
             <!-- ###########################################################################-->
             <div class="card-panel amber darken-1 white-text">
@@ -62,32 +64,32 @@
             </div>
             <form action="#">
               <p>
-                <input type="checkbox" id="checkbox1" />
-                <label class="black-text" for="checkbox1">Facebook</label>
+                <input type="checkbox" id="facebookInput" />
+                <label class="black-text" for="facebookInput">Facebook</label>
               </p>
               <p>
-                <input type="checkbox" id="checkbox2" />
-                <label class="black-text" for="checkbox2">Instagram</label>
+                <input type="checkbox" id="instagramInput" />
+                <label class="black-text" for="instagramInput">Instagram</label>
               </p>
               <p>
-                <input type="checkbox" id="checkbox3" />
-                <label class="black-text" for="checkbox3">Campus Flyers</label>
+                <input type="checkbox" id="campusInput" />
+                <label class="black-text" for="campusInput">Campus Flyers</label>
               </p>
               <p>
-                <input type="checkbox" id="checkbox4" />
-                <label class="black-text" for="checkbox4">Northwestern Student Holdings</label>
+                <input type="checkbox" id="nshInput" />
+                <label class="black-text" for="nshInput">Northwestern Student Holdings</label>
               </p>
               <p>
-                <input type="checkbox" id="checkbox5" />
-                <label class="black-text" for="checkbox5">Organizarion Fair</label>
+                <input type="checkbox" id="fairInput" />
+                <label class="black-text" for="fairInput">Organizarion Fair</label>
               </p>
               <p>
-                <input type="checkbox" id="checkbox6" />
-                <label class="black-text" for="checkbox6">Word of Mouth</label>
+                <input type="checkbox" id="wordInput" />
+                <label class="black-text" for="wordInput">Word of Mouth</label>
               </p>
               <p>
-                <input type="checkbox" id="checkbox7" />
-                <label class="black-text" for="checkbox7">Online Search</label>
+                <input type="checkbox" id="searchInput" />
+                <label class="black-text" for="searchInput">Online Search</label>
               </p>
             </form>
           </div>
@@ -105,8 +107,8 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="paper-size" type="text" data-length="20">
-              <label for="paper-size">A4, A3, US Tabloid, US Letter, Custom size?</label>
+              <input id="papersizeInput" type="text" data-length="100">
+              <label for="papersizeInput">A4, A3, US Tabloid, US Letter, Custom size?</label>
             </div>
           </div>
           <!-- ###########################################################################-->
@@ -115,8 +117,8 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="text" type="text" data-length="20">
-              <label for="text">e.g. time, location, slogan, header, etc.</label>
+              <input id="textInput" type="text" data-length="100">
+              <label for="textInput">e.g. time, location, slogan, header, etc.</label>
             </div>
           </div>
         </form>
@@ -170,8 +172,8 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="choose-styles" type="text" data-length="20">
-              <label for="choose-styles">Write your selected style/styles here. E.g. Minimalistic and Geometry</label>
+              <input id="styleInput" type="text" data-length="100">
+              <label for="styleInput">Write your selected style/styles here. E.g. Minimalistic and Geometry</label>
             </div>
           </div>
           <!-- ###########################################################################-->
@@ -186,12 +188,12 @@
             </div>
             <div class="col s6 valign">
               <div class="input-field col s12">
-                <input id="color1" type="text" data-length="10">
-                <label for="color1">Choose first color (hex code)</label>
+                <input id="color1Input" type="text" data-length="10">
+                <label for="color1Input">Choose first color (hex code)</label>
               </div>
               <div class="input-field col s12">
-                <input id="color2" type="text" data-length="10">
-                <label for="color2">Choose second color (hex code)</label>
+                <input id="color2Input" type="text" data-length="10">
+                <label for="color2Input">Choose second color (hex code)</label>
               </div>
             </div>
           </div>
@@ -237,8 +239,8 @@
           <form class="col s12 resize">
             <div class="row">
               <div class="input-field col s12">
-                <textarea id="branding-element" class="materialize-textarea"></textarea>
-                <label for="branding-element">e.g. Font and color scheme (hexcode, RGB, CMYK values)</label>
+                <textarea id="brandingInput" class="materialize-textarea"></textarea>
+                <label for="brandingInput">e.g. Font and color scheme (hexcode, RGB, CMYK values)</label>
               </div>
             </div>
           </form>
@@ -252,8 +254,8 @@
           <form class="col s12">
             <div class="row">
               <div class="input-field col s12">
-                <textarea id="additional-comment" class="materialize-textarea"></textarea>
-                <label for="additional-comment">Enter your comments here!</label>
+                <textarea id="commentInput" class="materialize-textarea"></textarea>
+                <label for="commentInput">Enter your comments here!</label>
               </div>
             </div>
           </form>
@@ -264,7 +266,7 @@
 
     <div class="row">
       <div class="center">
-        <a class="orange waves-effect waves-light btn center" href="/success">I am finished!</a>
+        <a class="orange waves-effect waves-light btn center" href="javascript://Save as TXT" id="submitLink">I am finished!</a>
       </div>
     </div>
   </div>
