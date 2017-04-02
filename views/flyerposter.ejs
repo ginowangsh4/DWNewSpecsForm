@@ -36,7 +36,7 @@
       <div class="row">
         <form class="col s12">
 
-          <h3 class="center section">General Inforamtion</h3>
+          <h3 class="center section">General Information</h3>
           <div class="row">
             <div class="input-field">
               <i class="material-icons prefix orange-text info-icon">account_circle</i>
@@ -58,6 +58,7 @@
               <input id="emailInput" type="text" class="validate">
               <label for="emailInput" class="black-text">Email Address</label>
             </div>
+            <br>
             <!-- ###########################################################################-->
             <div class="card-panel amber darken-1 white-text">
               <h5>Where did you hear about Designworks?</h5>
@@ -108,7 +109,7 @@
           <div class="row">
             <div class="input-field col s12">
               <input id="papersizeInput" type="text" data-length="100">
-              <label for="papersizeInput">A4, A3, US Tabloid, US Letter, Custom size?</label>
+              <label for="papersizeInput" class="black-text">A4, A3, US Tabloid, US Letter, Custom size?</label>
             </div>
           </div>
           <!-- ###########################################################################-->
@@ -118,7 +119,7 @@
           <div class="row">
             <div class="input-field col s12">
               <input id="textInput" type="text" data-length="100">
-              <label for="textInput">e.g. time, location, slogan, header, etc.</label>
+              <label for="textInput" class="black-text">e.g. time, location, slogan, header, etc.</label>
             </div>
           </div>
         </form>
@@ -132,50 +133,69 @@
           <h6 class="center">If you know how you want your commission to look. make suggestions. If not, don't fret! Questions in this section are all optional.</h6>
           <br>
           <div class="card-panel amber darken-1 white-text">
-            <h5>1. What kind of style would you prefer? Enter in the textbox below!</h5>
+            <h5>1. What kind of style would you prefer? Check the corresponding checkboxes below!</h5>
           </div>
           <div class="row">
             <div class="col s12 m6 l3 center">
-              <h6 class="center"><b>Minimalist</b></h6>
-              <img class="materialboxed" width="200" src="images/peanutbutter.png">
+              <h6 class="center">
+                <input type="checkbox" id="miniInput" />
+                <label class="black-text" for="miniInput">Minimalist</label>
+              </h6>
+              <img class="materialboxed" height="200" width="200" src="images/minimalist.png">
             </div>
             <div class="col s12 m6 l3 center">
-              <h6 class="center"><b>Photo-centred</b></h6>
-              <img class="materialboxed" width="200" src="images/DALC.jpg">
+              <h6 class="center">
+                <input type="checkbox" id="photoInput" />
+                <label class="black-text" for="photoInput">Photo-centered</label>
+              </h6>
+              <img class="materialboxed" height="200" width="200" src="images/photocentered.jpg">
             </div>
             <div class="col s12 m6 l3 center">
-              <h6 class="center"><b>Bold Font</b></h6>
-              <img class="materialboxed" width="200" src="images/lion.png">
+              <h6 class="center">
+                <input type="checkbox" id="boldInput" />
+                <label class="black-text" for="boldInput">Bold Font</label>
+              </h6>
+              <img class="materialboxed" height="200" width="200" src="images/boldfonts.jpg">
             </div>
             <div class="col s12 m6 l3 center">
-              <h6 class="center"><b>Geometry</b></h6>
-              <img class="materialboxed" width="200" src="images/norris.png">
+              <h6 class="center">
+                <input type="checkbox" id="geoInput" />
+                <label class="black-text" for="geoInput">Geometry</label>
+              </h6>
+              <img class="materialboxed" height="200" width="200" src="images/geometry.png">
             </div>
           </div>
           <div class="row">
             <div class="col s12 m6 l3 center">
-              <h6 class="center"><b>Classy</b></h6>
-              <img class="materialboxed" width="200" src="images/phantom.png">
+              <h6 class="center">
+                <input type="checkbox" id="classyInput" />
+                <label class="black-text" for="classyInput">Classy</label>
+              </h6>
+              <img class="materialboxed" height="200" width="200" src="images/classy.jpg">
             </div>
             <div class="col s12 m6 l3 center">
-              <h6 class="center"><b>Retro</b></h6>
-              <img class="materialboxed" width="200" src="images/polisci.png">
+              <h6 class="center">
+                <input type="checkbox" id="retroInput" />
+                <label class="black-text" for="retroInput">Retro</label>
+              </h6>
+              <img class="materialboxed" height="200" width="200" src="images/retro.jpg">
             </div>
             <div class="col s12 m6 l3 center">
-              <h6 class="center"><b>Doodle</b></h6>
-              <img class="materialboxed" width="200" src="images/sheparddm.png">
+              <h6 class="center">
+                <input type="checkbox" id="doodleInput" />
+                <label class="black-text" for="doodleInput">Doodle</label>
+              </h6>
+              <img class="materialboxed" height="200" width="200" src="images/doodle.png">
             </div>
             <div class="col s12 m6 l3 center">
-              <h6 class="center"><b>Illustration</b></h6>
-              <img class="materialboxed" width="200" src="images/SkiTrip.png">
+              <h6 class="center">
+                <input type="checkbox" id="illustrationInput" />
+                <label class="black-text" for="illustrationInput">Illustration</label>
+              </h6>
+              <img class="materialboxed" height="200" width="200" src="images/illustration.png">
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="styleInput" type="text" data-length="100">
-              <label for="styleInput">Write your selected style/styles here. E.g. Minimalistic and Geometry</label>
-            </div>
-          </div>
+          <br>
           <!-- ###########################################################################-->
           <div class="card-panel amber darken-1 white-text">
             <h5>2. Add some colors to your design!</h5>
@@ -189,14 +209,15 @@
             <div class="col s6 valign">
               <div class="input-field col s12">
                 <input id="color1Input" type="text" data-length="10">
-                <label for="color1Input">Choose first color (hex code)</label>
+                <label for="color1Input" class="black-text">Choose first color (hex code)</label>
               </div>
               <div class="input-field col s12">
                 <input id="color2Input" type="text" data-length="10">
-                <label for="color2Input">Choose second color (hex code)</label>
+                <label for="color2Input" class="black-text">Choose second color (hex code)</label>
               </div>
             </div>
           </div>
+          <br>
           <!-- ###########################################################################-->
           <div class="card-panel amber darken-1 white-text">
             <h5>3. Any image/logo you would like to include?</h5>
@@ -213,8 +234,11 @@
               </div>
             </div>
           </div>
-          <!-- ###########################################################################-->
+
         </div>
+        <br>
+        <!-- ###########################################################################-->
+
         <div class="card-panel amber darken-1 white-text">
           <h5>4. Any example of design you like?</h5>
         </div>
@@ -230,6 +254,7 @@
             </div>
           </div>
         </div>
+        <br>
         <!-- ###########################################################################-->
         <div class="card-panel amber darken-1 white-text">
           <h5>5. Do you have any branding elements?</h5>
@@ -240,11 +265,12 @@
             <div class="row">
               <div class="input-field col s12">
                 <textarea id="brandingInput" class="materialize-textarea"></textarea>
-                <label for="brandingInput">e.g. Font and color scheme (hexcode, RGB, CMYK values)</label>
+                <label for="brandingInput" class="black-text">e.g. Font and color scheme (hexcode, RGB, CMYK values)</label>
               </div>
             </div>
           </form>
         </div>
+
         <!-- ###########################################################################-->
         <div class="card-panel amber darken-1 white-text">
           <h5>6. Additional comment is always welcomed.</h5>
@@ -255,7 +281,7 @@
             <div class="row">
               <div class="input-field col s12">
                 <textarea id="commentInput" class="materialize-textarea"></textarea>
-                <label for="commentInput">Enter your comments here!</label>
+                <label for="commentInput" class="black-text">Enter your comments here!</label>
               </div>
             </div>
           </form>
