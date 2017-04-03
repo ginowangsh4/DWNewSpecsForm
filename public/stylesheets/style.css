@@ -121,3 +121,9 @@ div.evo-pop.ui-widget-content.ui-corner-all {
 .logo-green {
     color: rgb(81,181,87);
 }
+
+.jscolor {
+  text-align: center;
+  display: inline;
+  float: right;
+}
