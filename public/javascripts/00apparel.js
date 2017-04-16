@@ -5,12 +5,12 @@ function buildData(){
             "\r\nApparel Design Form" +
             "\r\n" +
             "\r\n##########################" +
-            "\r\n### General Infomation ###" +
+            "\r\n### General Information ###" +
             "\r\n##########################" +
             "\r\nName: "+$("#nameInput").val()+
             "\r\n" +
 
-            "\r\nOrganzation: "+$("#organizationInput").val()+
+            "\r\nOrganization: "+$("#organizationInput").val()+
             "\r\n" +
 
             "\r\nPhone Number: "+$("#phoneInput").val()+
@@ -30,7 +30,7 @@ function buildData(){
             "\r\n" +
 
             "\r\n##############################" +
-            "\r\n## Design Specfic Questions ##" +
+            "\r\n## Design Specific Questions ##" +
             "\r\n##############################" +
             "\r\nWould you like to order a front/back/other design:" +
             ($("#frontInput").is(":checked")?" Front Design,":"") +
@@ -42,7 +42,7 @@ function buildData(){
 
             "\r\nAre you interested in any specialty printing techniques?: "+$("#printingInput").val()+
             "\r\n" +
-            "\r\nWhat text would you like to include?: "+$("#textInput").val()+
+            "\r\nWhat text would you like to include?: "+$("#textInput").val() +
 
             "\r\n" +
             "\r\n#######################" +
@@ -64,7 +64,12 @@ function buildData(){
             "\r\n" +
             "\r\nDo you have any branding elements?: "+$("#brandingInput").val()+
             "\r\n" +
-            "\r\nAdditional comments: "+$("#commentInput").val();
+            "\r\nAdditional comments: "+$("#commentInput").val() +
+            "\r\n" +
+            "\r\n" +
+            "\r\n" +
+            "\r\n" +
+            "\r\n";
 
     return txtData;
 }
@@ -75,5 +80,7 @@ $(function(){
         var txtData = buildData();
         $(this).attr('download',"Apparel_"+$("#nameInput").val()+'_'+$('#organizationInput').val()+'.txt')
             .attr('href',"data:application/octet-stream;base64,"+Base64.encode(txtData));
+        var subject = '[New Specs Response] '+ $("#nameInput").val() + ' - Apparel design';
+        location.href = 'mailto:designworks.nu@gmail.com?subject=' + subject + '&body=' + encodeURIComponent(txtData);
     });
 });
