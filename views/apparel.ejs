@@ -4,6 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Specs :: Apparel</title>
+  <link rel="icon" href="/images/logo.png">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -100,49 +101,49 @@
       <div class="divider"></div>
       <!-- ///////////////////// 2. DESIGN SPECIFIC QUESTIONs //////////////////////////////////-->
       <div class="row">
-          <h3 class="center section">Design Specific Questions</h3>
-          <div class="card-panel amber darken-1 white-text">
-            <h5>1. Would you like to order a</h5>
+        <h3 class="center section">Design Specific Questions</h3>
+        <div class="card-panel amber darken-1 white-text">
+          <h5>1. Would you like to order a</h5>
+        </div>
+        <form action="#">
+          <p>
+            <input type="checkbox" id="frontInput" />
+            <label class="black-text" for="frontInput">Front Design</label>
+          </p>
+          <p>
+            <input type="checkbox" id="backInput" />
+            <label class="black-text" for="backInput">Back Design</label>
+          </p>
+          <p>
+            <input type="checkbox" id="otherInput" />
+            <label class="black-text" for="otherInput">Other</label>
+          </p>
+          <div class="input-field">
+            <input id="otherField" type="text" class="validate">
+            <label for="otherField" class="black-text">If you checked other, please specify here.</label>
           </div>
-          <form action="#">
-            <p>
-              <input type="checkbox" id="frontInput" />
-              <label class="black-text" for="frontInput">Front Design</label>
-            </p>
-            <p>
-              <input type="checkbox" id="backInput" />
-              <label class="black-text" for="backInput">Back Design</label>
-            </p>
-            <p>
-              <input type="checkbox" id="otherInput" />
-              <label class="black-text" for="otherInput">Other</label>
-            </p>
-            <div class="input-field">
-              <input id="otherField" type="text" class="validate">
-              <label for="otherField" class="black-text">If you checked other, please specify here.</label>
-            </div>
-          </form>
-          <br>
-          <!-- ###########################################################################-->
-          <div class="card-panel amber darken-1 white-text">
-            <h5>2. Are you interested in any specialty printing techniques (gold foil, embroidery, etc)?</h5>
+        </form>
+        <br>
+        <!-- ###########################################################################-->
+        <div class="card-panel amber darken-1 white-text">
+          <h5>2. Are you interested in any specialty printing techniques (gold foil, embroidery, etc)?</h5>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="printingInput" type="text" data-length="100">
+            <label for="printingInput" class="black-text">Your answer</label>
           </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="printingInput" type="text" data-length="100">
-              <label for="printingInput" class="black-text">Your answer</label>
-            </div>
+        </div>
+        <!-- ###########################################################################-->
+        <div class="card-panel amber darken-1 white-text">
+          <h5>3. What text would you like to include?</h5>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="textInput" type="text" data-length="100">
+            <label for="textInput" class="black-text">e.g. time, location, slogan, header, etc.</label>
           </div>
-          <!-- ###########################################################################-->
-          <div class="card-panel amber darken-1 white-text">
-            <h5>3. What text would you like to include?</h5>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="textInput" type="text" data-length="100">
-              <label for="textInput" class="black-text">e.g. time, location, slogan, header, etc.</label>
-            </div>
-          </div>
+        </div>
       </div>
 
       <div class="divider"></div>
@@ -239,7 +240,7 @@
           </div>
           <br>
           <!-- ###########################################################################-->
-          <div class="card-panel amber darken-1 white-text">
+          <!-- <div class="card-panel amber darken-1 white-text">
             <h5>3. Any image/logo you would like to include?</h5>
           </div>
 
@@ -255,11 +256,10 @@
             </div>
           </div>
 
-        </div>
-        <br>
+        <br> -->
         <!-- ###########################################################################-->
 
-        <div class="card-panel amber darken-1 white-text">
+        <!-- <div class="card-panel amber darken-1 white-text">
           <h5>4. Any example of design you like?</h5>
         </div>
 
@@ -274,10 +274,10 @@
             </div>
           </div>
         </div>
-        <br>
+        <br> -->
         <!-- ###########################################################################-->
         <div class="card-panel amber darken-1 white-text">
-          <h5>5. Do you have any branding elements?</h5>
+          <h5>3. Do you have any branding elements?</h5>
         </div>
 
         <div class="row resize">
@@ -291,9 +291,10 @@
           </form>
         </div>
 
+      </div>
         <!-- ###########################################################################-->
         <div class="card-panel amber darken-1 white-text">
-          <h5>6. Additional comment is always welcomed.</h5>
+          <h5>4. Additional comment is always welcomed.</h5>
         </div>
 
         <div class="row resize">
@@ -308,11 +309,24 @@
         </div>
 
       </form>
-    </div>
 
-    <div class="row">
-      <div class="center">
-        <a class="orange waves-effect waves-light btn center" href="javascript://Save as TXT" id="submitLink">I am finished!</a>
+
+      <div class="row">
+        <div class="col s12">
+          <h4 class="center">You are almost there! </h4>
+          <blockquote>     Please review your response and click "I'm ready" to send us your response. </blockquote>
+          <blockquote>     If there is any image/logo you would like to include or any example of design you like, please attach them in this email! </blockquote>
+          <blockquote>     We also provides a copy of this response for your reference in download. </blockquote>
+          <blockquote>     Feel free to request a different type of design or another design product, and reach out to us if you have any question!</blockquote>
+          <br>
+        </div>
+        <div class="center">
+          <a class="amber darken-1 waves-effect waves-light btn center" href="javascript://Save as TXT" id="submitLink">I'm ready!</a>
+        </div>
+        <br>
+        <div class="center">
+          <a class="amber darken-1 waves-effect waves-light btn center" href="/">Request another design</a>
+        </div>
       </div>
     </div>
   </div>
@@ -321,11 +335,11 @@
 
 
 <!-- <footer class="page-footer orange">
-  <div class="footer-copyright">
-    <div class="container">
-      Brought to you by <a class="orange-text text-lighten-3" href="http://DesignWorks.nu">DesignWorks NU</a>
-    </div>
-  </div>
+<div class="footer-copyright">
+<div class="container">
+Brought to you by <a class="orange-text text-lighten-3" href="http://DesignWorks.nu">DesignWorks NU</a>
+</div>
+</div>
 
 </footer> -->
 
@@ -333,11 +347,11 @@
 <script src="/javascripts/materialize.js"></script>
 <script src="/javascripts/init.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
-        $("#colorpicker1").colorpicker({
-          defaultPalette: 'web'
-        });
-    });
+$(document).ready(function() {
+  $("#colorpicker1").colorpicker({
+    defaultPalette: 'web'
+  });
+});
 </script>
 
 </body>
