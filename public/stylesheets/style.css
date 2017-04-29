@@ -94,6 +94,13 @@ div.evo-pop.ui-widget-content.ui-corner-all {
   margin: auto;
   text-align: center;
 }
+.center.new-design {
+  padding-top: 200px;
+  padding-bottom: 10px;
+}
+.center.new-design p {
+  padding-top: 10px;
+}
 /*********************
 ***  Site Colors  ***
 *********************/
