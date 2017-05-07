@@ -94,6 +94,9 @@ div.evo-pop.ui-widget-content.ui-corner-all {
   margin: auto;
   text-align: center;
 }
+.col.s12.m6.l3.center.design-portfolio {
+  padding-bottom: 20px;
+}
 /* styling for color-picker */
 .row.color-picker {
   padding-top: 30px;
