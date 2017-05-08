@@ -293,18 +293,24 @@
             </div>
 
             <div class="row color-picker">
-              <div class="col s6">
-                <div id="colorpicker1"></div>
-                <!-- <input style="width:100px;" id="colorpicker1"/> -->
-              </div>
-              <div class="col s6 valign">
-                <div class="input-field col s12">
-                  <input id="color1Input" type="text" data-length="10">
-                  <label for="color1Input" class="black-text">Choose first color (hex code)</label>
+              <div class="col s12">
+                <div class="col m6 s12 colorpicker1-space">
+                  <div id="colorpicker1"></div>
                 </div>
-                <div class="input-field col s12">
-                  <input id="color2Input" type="text" data-length="10">
-                  <label for="color2Input" class="black-text">Choose second color (hex code)</label>
+                <div class="col m6 s12 color-text">
+                  <div class="input-field col s12 valign-wrapper">
+                    <input id="color1Input" type="text" placeholder="Choose first color (hex code)"data-length="10">
+                  </div>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="col m6 s12">
+                  <div id="colorpicker2"></div>
+                </div>
+                <div class="col m6 s12 color-text">
+                  <div class="input-field col s12 valign-wrapper">
+                    <input id="color2Input" type="text" placeholder="Choose second color (hex code)"data-length="10">
+                  </div>
                 </div>
               </div>
             </div>
@@ -415,6 +421,16 @@ $(document).ready(function() {
   $("#colorpicker1").colorpicker({
     defaultPalette: 'web'
   });
+  $("#colorpicker1").on("change.color", function(event, color) {
+    $("#color1Input").val(color);
+  });
+  $("#colorpicker2").colorpicker({
+    defaultPalette: 'web'
+  });
+  $("#colorpicker2").on("change.color", function(event, color) {
+    $("#color2Input").val(color);
+  });
+
 });
 </script>
 

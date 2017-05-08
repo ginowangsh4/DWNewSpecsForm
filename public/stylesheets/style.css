@@ -64,6 +64,10 @@ h6{
 border-bottom: 1px solid #000;
 box-shadow: 0 1px 0 0 #000;
 }
+/* Default text color for placeholder */
+::-webkit-input-placeholder {
+    color: #000000;
+}
 /* GENERAL STYLING FOR 6 PAGES */
 .section{
   padding-bottom: 7px;
@@ -100,6 +104,21 @@ div.evo-pop.ui-widget-content.ui-corner-all {
 /* styling for color-picker */
 .row.color-picker {
   padding-top: 30px;
+}
+.col.m6.s12.colorpicker1-space {
+  padding-bottom: 20px;
+}
+.col.m6.s12.color-text {
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 600px) {
+  .col.m6.s12.color-text {
+    padding-top: 0px;
+  }
+  .col.m6.s12.colorpicker1-space {
+    padding-bottom: 0px;
+  }
 }
 /* styling for instruction at bottom */
 h4.center.bottom-title {
