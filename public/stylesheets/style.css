@@ -101,6 +101,10 @@ div.evo-pop.ui-widget-content.ui-corner-all {
 .col.s12.m6.l3.center.design-portfolio {
   padding-bottom: 20px;
 }
+img.materialboxed.initialized {
+  width: 80%;
+  height: 80%;
+}
 /* styling for color-picker */
 .row.color-picker {
   padding-top: 30px;
