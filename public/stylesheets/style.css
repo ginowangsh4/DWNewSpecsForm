@@ -64,6 +64,10 @@ h6{
 border-bottom: 1px solid #000;
 box-shadow: 0 1px 0 0 #000;
 }
+/* Default text color for placeholder */
+::-webkit-input-placeholder {
+    color: #000000;
+}
 /* GENERAL STYLING FOR 6 PAGES */
 .section{
   padding-bottom: 7px;
@@ -94,10 +98,49 @@ div.evo-pop.ui-widget-content.ui-corner-all {
   margin: auto;
   text-align: center;
 }
-/*********************
-***  Site Colors  ***
-*********************/
+.col.s12.m6.l3.center.design-portfolio {
+  padding-bottom: 20px;
+}
+img.materialboxed.initialized {
+  
+  width: 80%;
+  height: 80%;
+}
+/* styling for color-picker */
+.row.color-picker {
+  padding-top: 30px;
+}
+.col.m6.s12.colorpicker1-space {
+  padding-bottom: 20px;
+}
+.col.m6.s12.color-text {
+  padding-top: 80px;
+}
 
+@media screen and (max-width: 600px) {
+  .col.m6.s12.color-text {
+    padding-top: 0px;
+  }
+  .col.m6.s12.colorpicker1-space {
+    padding-bottom: 0px;
+  }
+}
+/* styling for instruction at bottom */
+h4.center.bottom-title {
+  padding-bottom: 10px;
+}
+.center.new-design {
+  padding-top: 190px;
+  padding-bottom: 10px;
+}
+.center.new-design p {
+  padding-top: 35px;
+}
+/***  Website Page ***/
+.row.website-radio-button {
+  padding-left: 10px;
+}
+/***  Site Colors  ***/
 .logo-purple {
     color: rgb(154,84,158);
 }

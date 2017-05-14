@@ -106,12 +106,12 @@
           <h3 class="center section">Design Specific Questions</h3>
           <!-- ###########################################################################-->
           <div class="card-panel amber darken-1 white-text">
-            <h5>1. What paper size?</h5>
+            <h5>1. Which size paper?</h5>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <input id="papersizeInput" type="text" data-length="100">
-              <label for="papersizeInput" class="black-text">A4, A3, US Tabloid, US Letter, Custom size?</label>
+              <label for="papersizeInput" class="black-text">e.g. A4, A3, US Tabloid, US Letter, custom, etc.</label>
             </div>
           </div>
           <!-- ###########################################################################-->
@@ -132,69 +132,67 @@
       <div class="row">
         <form class="col s12">
           <h3 class="center">Visual Preferences</h3>
-          <h6 class="center">If you know how you want your commission to look. make suggestions. If not, don't fret! Questions in this section are all optional.</h6>
+          <h6 class="center">If you know how you want your commission to look, make suggestions. If not, don't fret! Questions in this section are all optional.</h6>
           <br>
           <div class="card-panel amber darken-1 white-text">
             <h5>1. What kind of style would you prefer? Check the corresponding checkboxes below!</h5>
           </div>
           <div class="row">
-            <div class="col s12 m6 l3 center">
+            <div class="col s12 m6 l3 center design-portfolio">
               <h6 class="center">
                 <input type="checkbox" id="miniInput" />
                 <label class="black-text" for="miniInput">Minimalist</label>
               </h6>
-              <img class="materialboxed" height="200" width="200" src="images/minimalist.png">
+              <img class="materialboxed" src="images/minimalist.png">
             </div>
-            <div class="col s12 m6 l3 center">
+            <div class="col s12 m6 l3 center design-portfolio">
               <h6 class="center">
                 <input type="checkbox" id="photoInput" />
                 <label class="black-text" for="photoInput">Photo-centered</label>
               </h6>
-              <img class="materialboxed" height="200" width="200" src="images/photocentered.jpg">
+              <img class="materialboxed" src="images/photocentered.jpg">
             </div>
-            <div class="col s12 m6 l3 center">
+            <div class="col s12 m6 l3 center design-portfolio">
               <h6 class="center">
                 <input type="checkbox" id="boldInput" />
                 <label class="black-text" for="boldInput">Bold Font</label>
               </h6>
-              <img class="materialboxed" height="200" width="200" src="images/boldfonts.jpg">
+              <img class="materialboxed" src="images/boldfonts.png">
             </div>
-            <div class="col s12 m6 l3 center">
+            <div class="col s12 m6 l3 center design-portfolio">
               <h6 class="center">
                 <input type="checkbox" id="geoInput" />
                 <label class="black-text" for="geoInput">Geometry</label>
               </h6>
-              <img class="materialboxed" height="200" width="200" src="images/geometry.png">
+              <img class="materialboxed" src="images/geometry.png">
             </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l3 center">
+            <div class="col s12 m6 l3 center design-portfolio">
               <h6 class="center">
                 <input type="checkbox" id="classyInput" />
                 <label class="black-text" for="classyInput">Classy</label>
               </h6>
-              <img class="materialboxed" height="200" width="200" src="images/classy.jpg">
+              <img class="materialboxed" src="images/classy.jpg">
             </div>
-            <div class="col s12 m6 l3 center">
+            <div class="col s12 m6 l3 center design-portfolio">
               <h6 class="center">
                 <input type="checkbox" id="retroInput" />
                 <label class="black-text" for="retroInput">Retro</label>
               </h6>
-              <img class="materialboxed" height="200" width="200" src="images/retro.jpg">
+              <img class="materialboxed" src="images/retro.jpg">
             </div>
-            <div class="col s12 m6 l3 center">
+            <div class="col s12 m6 l3 center design-portfolio">
               <h6 class="center">
                 <input type="checkbox" id="doodleInput" />
                 <label class="black-text" for="doodleInput">Doodle</label>
               </h6>
-              <img class="materialboxed" height="200" width="200" src="images/doodle.png">
+              <img class="materialboxed" src="images/doodle.png">
             </div>
-            <div class="col s12 m6 l3 center">
+            <div class="col s12 m6 l3 center design-portfolio">
               <h6 class="center">
                 <input type="checkbox" id="illustrationInput" />
                 <label class="black-text" for="illustrationInput">Illustration</label>
               </h6>
-              <img class="materialboxed" height="200" width="200" src="images/illustration.png">
+              <img class="materialboxed" src="images/illustration.png">
             </div>
           </div>
           <br>
@@ -203,19 +201,25 @@
             <h5>2. Add some colors to your design!</h5>
           </div>
 
-          <div class="row">
-            <div class="col s6">
-              <div id="colorpicker1"></div>
-              <!-- <input style="width:100px;" id="colorpicker1"/> -->
-            </div>
-            <div class="col s6 valign">
-              <div class="input-field col s12">
-                <input id="color1Input" type="text" data-length="10">
-                <label for="color1Input" class="black-text">Choose first color (hex code)</label>
+          <div class="row color-picker">
+            <div class="col s12">
+              <div class="col m6 s12 colorpicker1-space">
+                <div id="colorpicker1"></div>
               </div>
-              <div class="input-field col s12">
-                <input id="color2Input" type="text" data-length="10">
-                <label for="color2Input" class="black-text">Choose second color (hex code)</label>
+              <div class="col m6 s12 color-text">
+                <div class="input-field col s12 valign-wrapper">
+                  <input id="color1Input" type="text" placeholder="Choose first color (hex code)"data-length="10">
+                </div>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="col m6 s12">
+                <div id="colorpicker2"></div>
+              </div>
+              <div class="col m6 s12 color-text">
+                <div class="input-field col s12 valign-wrapper">
+                  <input id="color2Input" type="text" placeholder="Choose second color (hex code)"data-length="10">
+                </div>
               </div>
             </div>
           </div>
@@ -265,8 +269,8 @@
           <form class="col s12 resize">
             <div class="row">
               <div class="input-field col s12">
-                <textarea id="brandingInput" class="materialize-textarea"></textarea>
-                <label for="brandingInput" class="black-text">e.g. Font and color scheme (hexcode, RGB, CMYK values)</label>
+                <input id="brandingInput" type="text" data-length="1000">
+                <label for="brandingInput" class="black-text">e.g. fonts or color schemes (Hex codes, RGB, CMYK values)</label>
               </div>
             </div>
           </form>
@@ -274,7 +278,7 @@
       </div>
         <!-- ###########################################################################-->
         <div class="card-panel amber darken-1 white-text">
-          <h5>4. Additional comment is always welcomed.</h5>
+          <h5>4. Additional comments are always welcome.</h5>
         </div>
 
         <div class="row resize">
@@ -290,23 +294,18 @@
 
 
       </form>
-
-    <!-- ###########################################################################-->
-    <div class="row">
-      <div class="col s12">
-        <h4 class="center">You are almost there! </h4>
-        <blockquote>     Please review your response above and click "I'm ready" to send us your response. </blockquote>
-        <blockquote>     Remember to <u>attach</u> to this email any image/logo you would like to include in this design or any example of design you like.</blockquote>
+      <!-- ###########################################################################-->
+      <div class="row">
+        <div class="col s12">
+          <h4 class="center bottom-title">You are almost there! </h4>
+          <blockquote>     Please review your answers above. When you are ready, click “I’m ready” and an email will be generated for you to send us your responses.</blockquote>
+          <blockquote>     Remember to <u>attach</u> any images/logos you would like to include in this design or any examples of designs you like to the email.</blockquote>
+        </div>
+        <div class="center new-design">
+          <a class="amber darken-1 waves-effect waves-light btn center" href="javascript://Save as TXT" id="submitLink">I'm ready!</a>
+          <p>Feel free to start another design <a href="/" target="_blank"><u>here</u></a>!</p>
+        </div>
       </div>
-      <div class="center">
-        <a class="amber darken-1 waves-effect waves-light btn center" href="javascript://Save as TXT" id="submitLink">I'm ready!</a>
-        <br>
-        <br>
-      </div>
-      <div class="col s12">
-        <blockquote> Once you have submitted the response to us, feel free to start another design <a href="/" target="_blank"><u>here.</u></a></blockquote>
-      </div>
-    </div>
 
     </div>
   </div>
@@ -327,11 +326,21 @@
 <script src="/javascripts/materialize.js"></script>
 <script src="/javascripts/init.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
-        $("#colorpicker1").colorpicker({
-          defaultPalette: 'web'
-        });
-    });
+$(document).ready(function() {
+  $("#colorpicker1").colorpicker({
+    defaultPalette: 'web'
+  });
+  $("#colorpicker1").on("change.color", function(event, color) {
+    $("#color1Input").val(color);
+  });
+  $("#colorpicker2").colorpicker({
+    defaultPalette: 'web'
+  });
+  $("#colorpicker2").on("change.color", function(event, color) {
+    $("#color2Input").val(color);
+  });
+
+});
 </script>
 
 </body>
